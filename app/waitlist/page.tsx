@@ -106,7 +106,7 @@ export default function WaitlistPage() {
           <div className="inline-flex items-center gap-2 rounded-xl border border-white/10 bg-white/[0.04] px-5 py-3 mb-10">
             <CheckCircle className="w-4 h-4 text-yellow-400 shrink-0" />
             <p className="text-sm text-muted-foreground">
-              <span className="text-white font-semibold">Os primeiros 100 inscritos</span> ganham acesso gratuito por tempo limitado quando a plataforma for lançada.
+              <span className="text-white font-semibold">Os primeiros 20 inscritos</span> ganham acesso gratuito por tempo limitado quando a plataforma for lançada.
             </p>
           </div>
 
@@ -118,8 +118,8 @@ export default function WaitlistPage() {
                 <>
                   <p className="text-xl font-bold text-white mb-2">Você está na lista!</p>
                   <p className="text-muted-foreground text-sm">
-                    {position && position <= 100 ? (
-                      <>Você é o <span className="text-yellow-300 font-bold">#{position}</span> da fila — dentro dos primeiros 100. Seu trial gratuito está garantido.</>
+                    {position && position <= 20 ? (
+                      <>Você é o <span className="text-yellow-300 font-bold">#{position}</span> da fila — dentro dos primeiros 20. Seu trial gratuito está garantido.</>
                     ) : (
                       <>Você é o <span className="text-yellow-300 font-bold">#{position}</span> da fila. Avisaremos assim que a plataforma for lançada.</>
                     )}
@@ -230,7 +230,7 @@ export default function WaitlistPage() {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-yellow-500/5" />
         <div className="relative mx-auto max-w-2xl px-6 lg:px-10 text-center">
           <p className="text-3xl md:text-4xl font-bold text-white mb-4">
-            As primeiras 100 vagas poderão garantir acesso antecipado e trial gratuito.
+            As primeiras 20 vagas poderão garantir acesso antecipado e trial gratuito.
           </p>
           <p className="text-muted-foreground mb-8">
             Inscreva-se agora e garanta trial completo quando a plataforma for lançada.
